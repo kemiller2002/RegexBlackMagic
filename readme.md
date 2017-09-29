@@ -1,6 +1,6 @@
-#Regular Expressions - The Black Magic of Text Manipulation#
+# Regular Expressions - The Black Magic of Text Manipulation
 
-##Demo Material##
+## Demo Material
 The Demo material is based on searching the files PhoneNumbers.txt and JennysInfo.txt
 
 An example of how to call and get results using powershell: 

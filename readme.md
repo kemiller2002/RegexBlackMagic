@@ -23,3 +23,12 @@ An example of how to call and get results using powershell:
     - This allows us to specify that the matching expression must be at the end of the line and not some other position. 
     - If we know the Waldo phone entry we are looking for end with an 8, we can use the following expression: `^Waldo.*8$`
     - This gives us the following entry: Waldo Gosse                 (383) 950-2918
+6. Conditionals `|`
+    - Let's say we didn't know if we put Wally's phone number under Waldo or Wally (The English version of Waldo). 
+    - By using the `|` character we can search for both at the same time: `W(aldo|ally)` which gives the following results:
+        - Waldo Gosse                 (383) 950-2918
+        - Wally Won                   (979) 737-8058
+        - Sir Waldo                   (555) 555-1212
+        - Waldo the WaldoIfisenct     (543) 234-2342
+        - WWaldo                      (888) 294-2439
+7. `[]`

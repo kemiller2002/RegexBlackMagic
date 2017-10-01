@@ -6,6 +6,10 @@ The Demo material is based on searching the files PhoneNumbers.txt and JennysInf
 An example of how to call and get results using powershell: 
     Select-String -path PhoneNumbers.txt -Pattern 'Waldo'
 
+### Examples with PhoneNumbers.txt
+#### Powershell `Select-String -path PhoneNumbers.txt -Pattern 'Waldo'`
+#### egrep `egrep "Waldo" PhoneNumbers.txt`
+
 1. Match name Waldo
     - `Waldo`
 2. Use of `.`.  The `.` is a wild card and can represent any character.

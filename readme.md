@@ -31,4 +31,23 @@ An example of how to call and get results using powershell:
         - Sir Waldo                   (555) 555-1212
         - Waldo the WaldoIfisenct     (543) 234-2342
         - WWaldo                      (888) 294-2439
-7. `[]`
+7. `[]` allows you to specify several chacters which might fill the next space in the search text.
+    - `W[aA@]ldo` matches the following:
+        - Waldo Gosse                 (383) 950-2918
+        - W@ldo Geronimo              (835) 106-1512
+        - Waldo the WaldoIfisenct     (543) 234-2342
+        
+    - You can also specify Ranges such as `[a-z]` all lowercase letters, `[A-Z]` all uppercase letters, `[0-9]` all numbers.
+    - `W[a-z]ldo` matches
+        - Waldo Gosse                 (383) 950-2918
+        - Sir Waldo                   (555) 555-1212
+        - Waldo the WaldoIfisenct     (543) 234-2342
+        - Wuldo                       (345) 234-2343
+        - Wzldo                       (234) 090-2343
+        - WWaldo                      (888) 294-2439
+    - `W[a-ck-w]ldo` matches 
+        - Waldo Gosse                 (383) 950-2918
+        - Sir Waldo                   (555) 555-1212
+        - Waldo the WaldoIfisenct     (543) 234-2342
+        - Wuldo                       (345) 234-2343
+        - WWaldo                      (888) 294-2439
